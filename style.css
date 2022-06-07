@@ -1,7 +1,10 @@
 p {
-    color: aqua;
+    color: rgb(220, 139, 73);
 }
 img {
     width:450px;
     height:800px;
+}
+h1, h2 {
+    color:rgb(172, 122, 216)
 }

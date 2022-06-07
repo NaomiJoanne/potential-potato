@@ -1,4 +1,5 @@
 p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(220, 139, 73);
 }
 img {
@@ -6,5 +7,6 @@ img {
     height:800px;
 }
 h1, h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color:rgb(172, 122, 216)
 }

@@ -23,7 +23,8 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: rgb(179, 88, 235);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0.2rem 0.2rem 0.5rem #00000021; 
     padding: 0.2rem 1.4rem;
     justify-content: space-between;
 }
@@ -37,4 +38,19 @@ header nav {
 a {
     color: rgb(14, 3, 3);
     margin-left: 1rem
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+main.row {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+main.row > * {
+    margin-right: 6rem;
+}
+main.row > *:last-child {
+    margin-right: 0rem;
 }

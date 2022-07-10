@@ -1,20 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Staatliches&display=swap');
+
 html, body {
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    min-height: 100vh;
 }
 
 p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(220, 139, 73);
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    font-size: 1.5rem;
 }
+
 img {
-    width:450px;
-    height:800px;
+    width:auto;
+    height: 14rem;
+    border-radius: 6rem;
+    margin-top: 3rem;
 }
-h1, h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+
+h1 {
+    font-family: 'staatliches', cursive;
+    font-weight: 400;
+    font-size: 4rem;
     color:rgb(172, 122, 216)
+    
 }
 
 header {
@@ -27,30 +39,77 @@ header {
     box-shadow: 0.2rem 0.2rem 0.5rem #00000021; 
     padding: 0.2rem 1.4rem;
     justify-content: space-between;
+    height: 4rem;
 }
+
 header h1 {
-    color: blue;
+    color: #89BEA2;
+    font-size: 3rem;
 }
+
 header nav {
     display: flex;
     flex-direction: row;
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    font-size: 1rem;
 }
+
 a {
     color: rgb(14, 3, 3);
     margin-left: 1rem
 }
+
 .row {
     display: flex;
     flex-direction: row;
 }
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
 main.row {
     align-items: center;
     align-content: center;
     justify-content: center;
+    flex: 1 0 100%;
+    max-width: 900px;
+    margin: 3rem auto;
 }
+
 main.row > * {
     margin-right: 6rem;
 }
+
 main.row > *:last-child {
     margin-right: 0rem;
+}
+
+main.row .column {
+    flex: 1 1 100%;
+}
+
+main.row .img {
+    display: flex;
+    flex: 1 1 100%;
+    height: 30rem;
+    background: url('Picture.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 4rem;
+}
+
+.btn {
+    font-family: 'josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    background-color: #89BEA2;
+    text-align: center;
+    border: none;
+    border-radius: 1.4rem;
+    padding: 0.7rem;
+    text-decoration: none;
 }

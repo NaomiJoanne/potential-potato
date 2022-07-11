@@ -5,6 +5,8 @@ html, body {
     margin: 0;
     scroll-behavior: smooth;
     min-height: 100vh;
+    background-image: url(Background.jpg);
+    background-size: cover;
 }
 
 p {
@@ -17,16 +19,14 @@ p {
 img {
     width:auto;
     height: 14rem;
-    border-radius: 6rem;
     margin-top: 3rem;
 }
 
 h1 {
-    font-family: 'staatliches', cursive;
+    font-family: 'staatliches', Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 400;
-    font-size: 4rem;
+    font-size: 5rem;
     color:rgb(172, 122, 216)
-    
 }
 
 header {
@@ -36,7 +36,7 @@ header {
     flex-direction: row;
     align-items: center;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0.2rem 0.2rem 0.5rem #00000021; 
+    box-shadow: 0.2rem 0.2rem 0.7rem #00000021; 
     padding: 0.2rem 1.4rem;
     justify-content: space-between;
     height: 4rem;
@@ -56,9 +56,12 @@ header nav {
     font-size: 1rem;
 }
 
+header nav a {
+    margin-left: 1rem;
+}
+
 a {
     color: rgb(14, 3, 3);
-    margin-left: 1rem
 }
 
 .row {
@@ -99,8 +102,8 @@ main.row .img {
     background: url('Picture.jpg');
     background-position: center;
     background-size: cover;
-    border-radius: 4rem;
-}
+    border-radius: 9rem;
+} 
 
 .btn {
     font-family: 'josefin Sans', sans-serif;
@@ -112,4 +115,5 @@ main.row .img {
     border-radius: 1.4rem;
     padding: 0.7rem;
     text-decoration: none;
+    align-self: center;
 }

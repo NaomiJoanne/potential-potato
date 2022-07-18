@@ -5,8 +5,6 @@ html, body {
     margin: 0;
     scroll-behavior: smooth;
     min-height: 100vh;
-    background-image: url(Background.jpg);
-    background-size: cover;
 }
 
 p {
@@ -74,7 +72,7 @@ a {
     flex-direction: column;
 }
 
-main.row {
+main section  {
     align-items: center;
     align-content: center;
     justify-content: center;
@@ -83,27 +81,39 @@ main.row {
     margin: 3rem auto;
 }
 
-main.row > * {
-    margin-right: 6rem;
-}
-
-main.row > *:last-child {
-    margin-right: 0rem;
+main section > *:last-child {
+    margin-left: 2rem;
 }
 
 main.row .column {
     flex: 1 1 100%;
 }
 
-main.row .img {
+.img {
     display: flex;
     flex: 1 1 100%;
     height: 30rem;
-    background: url('Picture.jpg');
     background-position: center;
     background-size: cover;
-    border-radius: 9rem;
+    background-repeat: no-repeat;
+    border-radius: 11rem;
 } 
+
+#home .img {
+    background-image: url('Picture.jpg');
+}
+
+#about .img {
+    background-image: url('Picture2.jpg');
+}
+
+#portfolio .img {
+    background-image: url('Picture3.jpg');
+}
+
+#contact .img{
+    background-image: url('Picture4.jpg');
+}
 
 .btn {
     font-family: 'josefin Sans', sans-serif;

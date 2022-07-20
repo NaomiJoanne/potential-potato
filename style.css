@@ -28,10 +28,10 @@ h1 {
 }
 
 header {
-    position: sticky;
+    position: fixed;
     top: 0px;
-    display: flex;
-    flex-direction: row;
+    right: 0;
+    left:0;
     align-items: center;
     background-color: rgb(255, 255, 255);
     box-shadow: 0.2rem 0.2rem 0.7rem #00000021; 
@@ -56,6 +56,7 @@ header nav {
 
 header nav a {
     margin-left: 1rem;
+    text-decoration: none;
 }
 
 a {
@@ -76,9 +77,10 @@ main section  {
     align-items: center;
     align-content: center;
     justify-content: center;
-    flex: 1 0 100%;
+    flex: 1 0 calc(100vh - 4.4rem);
     max-width: 900px;
-    margin: 3rem auto;
+    margin: auto;
+    padding-top: 4.4rem;
 }
 
 main section > *:last-child {

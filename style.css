@@ -136,3 +136,7 @@ main.row .column {
     text-decoration: none;
     align-self: center;
 }
+
+.more {
+    display: none;
+}
